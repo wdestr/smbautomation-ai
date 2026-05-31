@@ -1,0 +1,85 @@
+/* ============================================================
+   smbautomation.ai — Design System / Style Guide page
+   ============================================================ */
+.ds-hero { padding-top: var(--s-20); padding-bottom: var(--s-16); border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
+.ds-hero .grid-bg { position: absolute; inset: 0; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse 80% 80% at 20% 0%, #000, transparent 70%); mask-image: radial-gradient(ellipse 80% 80% at 20% 0%, #000, transparent 70%); opacity: 0.6; }
+.ds-hero .inner { position: relative; z-index: 1; }
+.ds-hero h1 { font-size: var(--fs-mega); line-height: var(--lh-display); margin: var(--s-6) 0; }
+.ds-hero h1 em { font-style: normal; color: var(--amber); }
+.ds-hero p { font-size: var(--fs-lead); color: var(--warm-white-dim); max-width: 620px; }
+.ds-meta { display: flex; flex-wrap: wrap; gap: var(--s-6); margin-top: var(--s-10); }
+.ds-meta .m { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--steel); border: 1px solid var(--line); padding: 8px 14px; border-radius: var(--r-sm); }
+.ds-meta .m b { color: var(--fg); }
+
+.ds-section { padding-block: var(--s-20); border-bottom: 1px solid var(--line); }
+.ds-section > .container > .ds-shead { margin-bottom: var(--s-12); }
+.ds-shead .num { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--amber); letter-spacing: 0.16em; }
+.ds-shead h2 { font-size: var(--fs-h2); margin-top: var(--s-3); }
+.ds-shead p { color: var(--fg-muted); margin-top: var(--s-4); max-width: 640px; }
+
+.ds-grid { display: grid; gap: var(--s-6); }
+.ds-label { font-family: var(--font-mono); font-size: var(--fs-caption); letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: var(--s-5); }
+
+/* swatches */
+.swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: var(--s-4); }
+.swatch { border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; background: var(--surface); }
+.swatch .chip { height: 92px; }
+.swatch .meta { padding: var(--s-4) var(--s-5); }
+.swatch .meta .nm { font-weight: 600; font-size: var(--fs-small); }
+.swatch .meta .hex { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--fg-dim); margin-top: 2px; text-transform: uppercase; }
+.swatch .meta .tok { font-family: var(--font-mono); font-size: 11px; color: var(--steel); margin-top: 4px; }
+
+/* type specimens */
+.type-row { padding: var(--s-6) 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 180px 1fr; gap: var(--s-6); align-items: baseline; }
+.type-row:last-child { border-bottom: 0; }
+.type-row .spec { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--fg-dim); line-height: 1.6; }
+.type-row .spec b { color: var(--amber); display: block; font-weight: 600; }
+.type-sample { color: var(--fg); }
+@media (max-width: 720px) { .type-row { grid-template-columns: 1fr; gap: var(--s-3); } }
+
+/* spacing scale */
+.space-scale { display: flex; flex-direction: column; gap: var(--s-3); }
+.space-row { display: flex; align-items: center; gap: var(--s-5); }
+.space-row .bar { height: 14px; background: var(--amber); border-radius: 2px; }
+.space-row .lbl { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--fg-muted); min-width: 120px; }
+
+/* spec tiles */
+.spec-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--s-4); }
+.spec-tile { border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-6); background: var(--surface); }
+.spec-tile .demo { height: 64px; display: grid; place-items: center; margin-bottom: var(--s-5); }
+.spec-tile .nm { font-weight: 600; font-size: var(--fs-small); }
+.spec-tile .tok { font-family: var(--font-mono); font-size: 11px; color: var(--fg-dim); margin-top: 3px; }
+
+.radius-demo { width: 80px; height: 56px; background: var(--amber-wash); border: 1px solid var(--line-amber); }
+.shadow-demo { width: 88px; height: 56px; background: var(--surface-2); border-radius: var(--r-sm); }
+
+/* component panels */
+.comp-panel { border: 1px solid var(--line); border-radius: var(--r-md); padding: clamp(24px, 4vw, 40px); background: var(--bg-band); }
+.comp-row { display: flex; flex-wrap: wrap; gap: var(--s-5); align-items: center; }
+
+/* motion bars */
+.motion-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: var(--s-4); }
+.motion-item { border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-6); background: var(--surface); }
+.motion-item .nm { font-weight: 600; font-size: var(--fs-small); }
+.motion-item .v { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--amber); margin-top: var(--s-2); }
+.motion-item .d { font-size: var(--fs-caption); color: var(--fg-muted); margin-top: var(--s-3); }
+
+/* voice table */
+.voice-cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-6); }
+.voice-card { border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-8); background: var(--surface); }
+.voice-card.do { border-color: rgba(79,209,139,0.3); }
+.voice-card.dont { border-color: rgba(242,92,84,0.3); }
+.voice-card h4 { font-family: var(--font-mono); font-size: var(--fs-caption); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: var(--s-5); }
+.voice-card.do h4 { color: var(--green); }
+.voice-card.dont h4 { color: var(--red); }
+.voice-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--s-4); }
+.voice-card li { font-size: var(--fs-small); color: var(--warm-white-dim); padding-left: var(--s-6); position: relative; }
+.voice-card li::before { content: ""; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 1px; transform: rotate(45deg); }
+.voice-card.do li::before { background: var(--green); }
+.voice-card.dont li::before { background: var(--red); }
+@media (max-width: 720px) { .voice-cols { grid-template-columns: 1fr; } }
+
+.ds-toc { position: sticky; top: 72px; background: rgba(13,15,18,0.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); z-index: 40; }
+.ds-toc .row { display: flex; gap: var(--s-6); overflow-x: auto; padding: var(--s-4) 0; }
+.ds-toc a { font-family: var(--font-mono); font-size: var(--fs-caption); letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-dim); white-space: nowrap; transition: color var(--dur-fast); }
+.ds-toc a:hover { color: var(--amber); }

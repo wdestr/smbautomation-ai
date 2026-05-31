@@ -1,0 +1,92 @@
+# smbautomation.ai — Netlify configuration
+# Deploy: drag smb-automation/project/smbautomation.ai/ into Netlify drop zone,
+# or set publish directory to "smb-automation/project/smbautomation.ai" in Netlify UI.
+
+[build]
+  publish = "."
+
+# ── Clean URLs (strip .html extension) ──────────────────────────────────────
+[[redirects]]
+  from   = "/pricing"
+  to     = "/pricing.html"
+  status = 200
+
+[[redirects]]
+  from   = "/resources"
+  to     = "/resources/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/resources/answering-service-cost"
+  to     = "/resources/answering-service-cost.html"
+  status = 200
+
+[[redirects]]
+  from   = "/resources/missed-call-text-back"
+  to     = "/resources/missed-call-text-back.html"
+  status = 200
+
+[[redirects]]
+  from   = "/resources/ai-vs-virtual-receptionist"
+  to     = "/resources/ai-vs-virtual-receptionist.html"
+  status = 200
+
+[[redirects]]
+  from   = "/services/ai-phone-agent"
+  to     = "/services/ai-phone-agent.html"
+  status = 200
+
+[[redirects]]
+  from   = "/services/workflow-automation"
+  to     = "/services/workflow-automation.html"
+  status = 200
+
+[[redirects]]
+  from   = "/services/ai-training"
+  to     = "/services/ai-training.html"
+  status = 200
+
+[[redirects]]
+  from   = "/industries/hvac-ai-answering-service"
+  to     = "/industries/hvac-ai-answering-service.html"
+  status = 200
+
+[[redirects]]
+  from   = "/industries/plumbing-ai-answering-service"
+  to     = "/industries/plumbing-ai-answering-service.html"
+  status = 200
+
+[[redirects]]
+  from   = "/industries/electrician-ai-answering-service"
+  to     = "/industries/electrician-ai-answering-service.html"
+  status = 200
+
+[[redirects]]
+  from   = "/industries/roofing-ai-answering-service"
+  to     = "/industries/roofing-ai-answering-service.html"
+  status = 200
+
+[[redirects]]
+  from   = "/industries/dental-ai-answering-service"
+  to     = "/industries/dental-ai-answering-service.html"
+  status = 200
+
+# ── Security headers ────────────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+# ── Long-lived cache for hashed assets ──────────────────────────────────────
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

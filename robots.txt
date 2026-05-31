@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# AI / LLM crawlers explicitly welcomed — this site is built to be cited
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://smbautomation.ai/sitemap.xml

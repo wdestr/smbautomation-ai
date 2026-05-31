@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | smbautomation.ai</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0D0F12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+  .not-found {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--s-16) var(--page-pad-x);
+    position: relative;
+  }
+  .not-found .grid-bg {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 30%, transparent 75%);
+    mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 30%, transparent 75%);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .not-found-inner {
+    position: relative; z-index: 1; max-width: 560px;
+  }
+  .not-found-code {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(6rem, 20vw, 12rem);
+    line-height: 0.9;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--steel-faint);
+    letter-spacing: var(--ls-display);
+    margin-bottom: var(--s-8);
+    display: block;
+  }
+  .not-found h1 {
+    font-size: var(--fs-h2);
+  }
+  .not-found p {
+    margin-top: var(--s-5);
+    font-size: var(--fs-lead);
+    color: var(--warm-white-dim);
+  }
+  .not-found .cta-row {
+    display: flex; gap: var(--s-4); justify-content: center; flex-wrap: wrap; margin-top: var(--s-10);
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container container-wide">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="/" aria-label="smbautomation.ai home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" rx="6" fill="#F5A623"/>
+          <path d="M8 20.5c2-7 4-7 6 0s4 7 6-3" stroke="#1A1206" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="23.5" cy="11" r="2" fill="#1A1206"/>
+        </svg>
+        <span>smb<span class="brand-dim">automation</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#industries">Industries</a></li>
+        <li><a href="/pricing.html">Pricing</a></li>
+        <li><a href="/resources/index.html">Resources</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-call" href="tel:+13105550199" aria-label="Call our demo AI">
+          <span class="dot" aria-hidden="true"></span>
+          <span>(310) 555-0199</span>
+        </a>
+        <button class="btn btn-primary" data-open-booking type="button">Book a call</button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="not-found">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="not-found-inner">
+      <span class="not-found-code" aria-hidden="true">404</span>
+      <span class="eyebrow" style="justify-content:center;">Page not found</span>
+      <h1 style="margin-top:var(--s-5);">This page doesn't exist.</h1>
+      <p>The URL might be wrong, or this page may have moved. Start from the homepage and we'll get you where you need to go.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="/">Back to home</a>
+        <a class="btn btn-ghost btn-lg" href="tel:+13105550199"><i data-lucide="phone-call"></i> Call our AI</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>if (window.lucide) window.lucide.createIcons();</script>
+</body>
+</html>

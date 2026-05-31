@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System — smbautomation.ai</title>
+<meta name="description" content="The smbautomation.ai design system: Industrial Precision meets Premium Dark. Colors, type, spacing, components, motion, and voice.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/design-system.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container container-wide">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="smbautomation.ai home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" rx="6" fill="#F5A623"/>
+          <path d="M8 20.5c2-7 4-7 6 0s4 7 6-3" stroke="#1A1206" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="23.5" cy="11" r="2" fill="#1A1206"/>
+        </svg>
+        <span>smb<span class="brand-dim">automation</span></span>
+      </a>
+      <div class="nav-actions">
+        <a class="nav-call" href="index.html"><i data-lucide="arrow-left" style="width:16px;height:16px"></i> Back to site</a>
+        <a class="btn btn-primary" href="index.html">View homepage</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Sticky TOC -->
+<nav class="ds-toc" aria-label="Sections">
+  <div class="container container-wide">
+    <div class="row">
+      <a href="#foundations">01 · Foundations</a>
+      <a href="#color">02 · Color</a>
+      <a href="#type">03 · Typography</a>
+      <a href="#spacing">04 · Spacing &amp; Form</a>
+      <a href="#components">05 · Components</a>
+      <a href="#motion">06 · Motion</a>
+      <a href="#voice">07 · Voice</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="ds-hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="container container-wide inner">
+    <span class="eyebrow">Design System · v1.0</span>
+    <h1>Industrial precision,<br><em>premium dark.</em></h1>
+    <p>The system behind smbautomation.ai. Built to feel like a sharp operator made it — direct, confident, and quietly intimidating in a "this actually works" way. Not a purple-gradient SaaS site. Not a 2019 marketing agency.</p>
+    <div class="ds-meta">
+      <span class="m"><b>3</b> typefaces</span>
+      <span class="m"><b>1</b> action color</span>
+      <span class="m">4-pt <b>spacing base</b></span>
+      <span class="m">Crisp <b>≤8px radii</b></span>
+      <span class="m">Restrained <b>motion</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- 01 Foundations -->
+<section class="ds-section" id="foundations">
+  <div class="container container-wide">
+    <div class="ds-shead">
+      <span class="num">01 / FOUNDATIONS</span>
+      <h2>The one-sentence brief.</h2>
+      <p>A seasoned operator built a product that actually works, documented it without bullshit, and invited you to test it before buying anything. Every design decision answers to that sentence.</p>
+    </div>
+    <div class="ds-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="comp-panel">
+        <p class="ds-label">Principle 01</p>
+        <h3 style="font-size: var(--fs-h4); font-weight:600;">Specifics over superlatives</h3>
+        <p class="muted" style="font-size: var(--fs-small); margin-top: var(--s-3);">"Answers in under 1 second" beats "lightning-fast." Numbers, cities, and named industries do the persuading.</p>
+      </div>
+      <div class="comp-panel">
+        <p class="ds-label">Principle 02</p>
+        <h3 style="font-size: var(--fs-h4); font-weight:600;">One action per viewport</h3>
+        <p class="muted" style="font-size: var(--fs-small); margin-top: var(--s-3);">Amber appears once per screen, on the single thing we want clicked. It never competes with itself.</p>
+      </div>
+      <div class="comp-panel">
+        <p class="ds-label">Principle 03</p>
+        <h3 style="font-size: var(--fs-h4); font-weight:600;">Proof, not promises</h3>
+        <p class="muted" style="font-size: var(--fs-small); margin-top: var(--s-3);">The product demos itself — a live transcript, a real number to call, a calculator that shows your number. Show, don't tell.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 Color -->
+<section class="ds-section" id="color">
+  <div class="container container-wide">
+    <div class="ds-shead">
+      <span class="num">02 / COLOR</span>
+      <h2>Warm near-black, one electric amber.</h2>
+      <p>The background carries a subtle warm undertone — never a cold clinical black. Amber is the only action color and is used surgically. Slate steel carries secondary text and chrome.</p>
+    </div>
+
+    <p class="ds-label">Core</p>
+    <div class="swatch-grid" style="margin-bottom: var(--s-12);">
+      <div class="swatch"><div class="chip" style="background:#0D0F12; border-bottom:1px solid var(--line)"></div><div class="meta"><div class="nm">Ink 900</div><div class="hex">#0D0F12</div><div class="tok">--bg / page</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#14181D"></div><div class="meta"><div class="nm">Ink 800</div><div class="hex">#14181D</div><div class="tok">--surface</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#1A2B3C"></div><div class="meta"><div class="nm">Steel 900</div><div class="hex">#1A2B3C</div><div class="tok">--surface-accent</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#F5A623"></div><div class="meta"><div class="nm">Amber</div><div class="hex">#F5A623</div><div class="tok">--primary</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#8A9BAD"></div><div class="meta"><div class="nm">Slate steel</div><div class="hex">#8A9BAD</div><div class="tok">--fg-muted</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#F0EDE8"></div><div class="meta"><div class="nm">Warm white</div><div class="hex">#F0EDE8</div><div class="tok">--fg</div></div></div>
+    </div>
+
+    <p class="ds-label">Amber range &amp; status</p>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="chip" style="background:#FFB838"></div><div class="meta"><div class="nm">Amber bright</div><div class="hex">#FFB838</div><div class="tok">hover</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#D98A0E"></div><div class="meta"><div class="nm">Amber deep</div><div class="hex">#D98A0E</div><div class="tok">pressed</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#4FD18B"></div><div class="meta"><div class="nm">Live green</div><div class="hex">#4FD18B</div><div class="tok">status / live</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#F25C54"></div><div class="meta"><div class="nm">Alert red</div><div class="hex">#F25C54</div><div class="tok">errors only</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#5E6E7E"></div><div class="meta"><div class="nm">Steel dim</div><div class="hex">#5E6E7E</div><div class="tok">--fg-dim</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#1A1206"></div><div class="meta"><div class="nm">On-amber ink</div><div class="hex">#1A1206</div><div class="tok">text on amber</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 Type -->
+<section class="ds-section" id="type">
+  <div class="container container-wide">
+    <div class="ds-shead">
+      <span class="num">03 / TYPOGRAPHY</span>
+      <h2>Condensed display. Clean body. Machine mono.</h2>
+      <p>Barlow Condensed gives headlines an industrial, legible bulk you don't see on 90% of agency sites. DM Sans keeps body copy clean and modern. JetBrains Mono signals "machine output" — labels, data, transcripts.</p>
+    </div>
+
+    <div class="type-row">
+      <div class="spec"><b>Barlow Condensed</b>Display / H1 · 600<br>clamp → 6.5rem<br>lh 0.92 · ls −.015em</div>
+      <div class="type-sample" style="font-family:var(--font-display); font-weight:600; font-size: clamp(2.6rem,6vw,4.6rem); line-height:0.95;">Answers every call.</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>Barlow Condensed</b>H2 / Section · 600<br>clamp → 3.25rem</div>
+      <div class="type-sample" style="font-family:var(--font-display); font-weight:600; font-size: clamp(1.8rem,3.4vw,2.8rem);">Built around your revenue.</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>DM Sans</b>Lead · 400<br>1.4rem · lh 1.5</div>
+      <div class="type-sample lead" style="margin:0;">We build AI systems that handle your phones, your follow-ups, and your busiest workflows.</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>DM Sans</b>Body · 400<br>1.0625rem · lh 1.6</div>
+      <div class="type-sample" style="color:var(--fg-muted);">Right now, someone is searching for what you sell. They called. You didn't pick up. So they called the next business in Google — and that's who they're paying.</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>JetBrains Mono</b>Eyebrow / Label · 600<br>0.8125rem · ls .22em</div>
+      <div class="type-sample"><span class="eyebrow">What we build</span></div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>JetBrains Mono</b>Data · 500<br>tabular figures</div>
+      <div class="type-sample mono" style="font-size:1.4rem; color:var(--amber);">$43,200 · 00:48 · 14,000+</div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 Spacing & form -->
+<section class="ds-section" id="spacing">
+  <div class="container container-wide">
+    <div class="ds-shead">
+      <span class="num">04 / SPACING &amp; FORM</span>
+      <h2>4-pt rhythm. Crisp corners. Quiet shadows.</h2>
+      <p>Everything snaps to a 4-pt base. Radii stay small — this is not a rounded-corner brand. Shadows float cards above bands; they never add drama.</p>
+    </div>
+
+    <div class="ds-grid" style="grid-template-columns: 1.1fr 1fr; align-items:start;">
+      <div>
+        <p class="ds-label">Spacing scale</p>
+        <div class="space-scale">
+          <div class="space-row"><span class="lbl">--s-1 · 4px</span><span class="bar" style="width:4px"></span></div>
+          <div class="space-row"><span class="lbl">--s-2 · 8px</span><span class="bar" style="width:8px"></span></div>
+          <div class="space-row"><span class="lbl">--s-4 · 16px</span><span class="bar" style="width:16px"></span></div>
+          <div class="space-row"><span class="lbl">--s-6 · 24px</span><span class="bar" style="width:24px"></span></div>
+          <div class="space-row"><span class="lbl">--s-8 · 32px</span><span class="bar" style="width:32px"></span></div>
+          <div class="space-row"><span class="lbl">--s-12 · 48px</span><span class="bar" style="width:48px"></span></div>
+          <div class="space-row"><span class="lbl">--s-16 · 64px</span><span class="bar" style="width:64px"></span></div>
+          <div class="space-row"><span class="lbl">--s-24 · 96px</span><span class="bar" style="width:96px"></span></div>
+        </div>
+      </div>
+      <div>
+        <p class="ds-label">Radii &amp; elevation</p>
+        <div class="spec-tiles">
+          <div class="spec-tile"><div class="demo"><div class="radius-demo" style="border-radius:2px"></div></div><div class="nm">Inputs</div><div class="tok">--r-sm · 4px</div></div>
+          <div class="spec-tile"><div class="demo"><div class="radius-demo" style="border-radius:8px"></div></div><div class="nm">Cards</div><div class="tok">--r-md · 8px</div></div>
+          <div class="spec-tile"><div class="demo"><div class="shadow-demo" style="box-shadow:var(--shadow-2)"></div></div><div class="nm">Float</div><div class="tok">--shadow-2</div></div>
+          <div class="spec-tile"><div class="demo"><div class="shadow-demo" style="box-shadow:var(--shadow-amber)"></div></div><div class="nm">Featured</div><div class="tok">--shadow-amber</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 Components -->
+<section class="ds-section" id="components">
+  <div class="container container-wide">
+    <div class="ds-shead">
+      <span class="num">05 / COMPONENTS</span>
+      <h2>The working parts.</h2>
+      <p>Every component on the site, pulled out of context. Buttons, the signature transcript, proof metrics, pricing, and the FAQ accordion.</p>
+    </div>
+
+    <p class="ds-label">Buttons</p>
+    <div class="comp-panel" style="margin-bottom: var(--s-10);">
+      <div class="comp-row">
+        <a class="btn btn-primary btn-lg btn-pulse btn-mono" href="#"><i data-lucide="phone-call"></i> Call our demo AI</a>
+        <a class="btn btn-primary" href="#">Book a call</a>
+        <a class="btn btn-ghost" href="#">See what we build</a>
+        <button class="btn btn-ghost btn-mono" type="button">Secondary mono</button>
+      </div>
+    </div>
+
+    <div class="ds-grid" style="grid-template-columns: 1fr 1fr; align-items:start; margin-bottom: var(--s-10);">
+      <div>
+        <p class="ds-label">Eyebrow + status</p>
+        <div class="comp-panel" style="display:flex; flex-direction:column; gap: var(--s-5);">
+          <span class="eyebrow">What we build</span>
+          <span class="eyebrow muted">Pricing</span>
+          <span class="hero-status" style="margin:0;"><span class="dot"></span> Demo line live · LA &amp; nationwide</span>
+        </div>
+      </div>
+      <div>
+        <p class="ds-label">Proof metric</p>
+        <div class="proof-item" style="border:1px solid var(--line); border-radius: var(--r-md);">
+          <span class="ind"><i data-lucide="wind"></i> HVAC · Torrance, CA</span>
+          <p class="metric"><b>40% fewer</b> missed calls in 30 days</p>
+          <p class="loc">After-hours leads now captured automatically.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ds-grid" style="grid-template-columns: 1fr 1fr; align-items:start;">
+      <div>
+        <p class="ds-label">Signature transcript</p>
+        <div class="phone-shell">
+          <div class="phone-topbar">
+            <span class="avatar">A</span>
+            <span class="who"><span class="name">Incoming call</span><span class="role">AI receptionist · Ava</span></span>
+            <span class="timer"><span class="dot"></span><span class="mono">00:48</span></span>
+          </div>
+          <div class="transcript" style="min-height:auto;">
+            <div class="bubble caller"><span class="tag">Caller</span>Hi, my AC just died and it's 96 degrees in here.</div>
+            <div class="bubble ai"><span class="tag">Ava · AI Agent</span>I'm sorry to hear that. I can get a technician out today. Are you in the Torrance area?</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="ds-label">Pricing card · featured</p>
+        <article class="price-card featured">
+          <span class="price-badge">Most popular</span>
+          <span class="tier-tag">Growth</span>
+          <div class="price"><span class="amt">$697</span><span class="per">/mo</span></div>
+          <p class="price-note">Phones + the automations behind them.</p>
+          <ul class="features">
+            <li><i data-lucide="check"></i> Everything in Starter</li>
+            <li><i data-lucide="check"></i> Workflow automation (up to 3 flows)</li>
+            <li><i data-lucide="check"></i> CRM sync (GoHighLevel)</li>
+          </ul>
+          <button class="btn btn-primary btn-block" type="button">Book a Growth demo</button>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 Motion -->
+<section class="ds-section" id="motion">
+  <div class="container container-wide">
+    <div class="ds-shead">
+      <span class="num">06 / MOTION</span>
+      <h2>Restrained. Eased. Purposeful.</h2>
+      <p>Fades and subtle positional eases, never bounces or springs. Motion proves the product is alive — a typing transcript, ticking counters — without ever slowing the page. Performance is conversion.</p>
+    </div>
+    <div class="motion-list">
+      <div class="motion-item"><div class="nm">Entrance / reveal</div><div class="v">520ms · cubic-bezier(.2,0,0,1)</div><div class="d">Sections fade up 24px on scroll.</div></div>
+      <div class="motion-item"><div class="nm">Hover transition</div><div class="v">140ms · ease-out</div><div class="d">Color and border shifts. No scale.</div></div>
+      <div class="motion-item"><div class="nm">Transcript bubble</div><div class="v">280ms · fade + 8px rise</div><div class="d">Line-by-line, looping conversation.</div></div>
+      <div class="motion-item"><div class="nm">Count-up</div><div class="v">1600ms · ease-out cubic</div><div class="d">Numbers tick up once, on view.</div></div>
+      <div class="motion-item"><div class="nm">CTA glow pulse</div><div class="v">1600ms · infinite</div><div class="d">Primary "Call AI" CTA on hover only.</div></div>
+      <div class="motion-item"><div class="nm">Particle grid</div><div class="v">Canvas · &lt;40 nodes</div><div class="d">Low-opacity, pauses off-screen.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 Voice -->
+<section class="ds-section" id="voice" style="border-bottom:0;">
+  <div class="container container-wide">
+    <div class="ds-shead">
+      <span class="num">07 / VOICE</span>
+      <h2>An operator talking to operators.</h2>
+      <p>Short sentences. Real takes. Zero corporate filter. The buyer's money is always the subject — frame everything in revenue saved or captured.</p>
+    </div>
+    <div class="voice-cols">
+      <div class="voice-card do">
+        <h4>Do</h4>
+        <ul>
+          <li>Name the buyer's industry: "Built for HVAC owners."</li>
+          <li>Lead with the outcome, then the feature.</li>
+          <li>Use specific numbers, cities, and timelines.</li>
+          <li>"A receptionist that never sleeps, never calls in sick."</li>
+          <li>Say what the AI actually does next.</li>
+        </ul>
+      </div>
+      <div class="voice-card dont">
+        <h4>Don't</h4>
+        <ul>
+          <li>Hype words: "revolutionary," "seamless," "game-changing."</li>
+          <li>"AI-powered" with no verb after it.</li>
+          <li>Feature lists above the fold.</li>
+          <li>"Contact us for pricing" on anything but enterprise.</li>
+          <li>Borrowed Fortune-500 credibility. Match the buyer.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container container-wide">
+    <div class="footer-bottom" style="border-top:0; padding-top:0;">
+      <p class="legal">smbautomation.ai design system · v1.0 · © <span id="year">2026</span></p>
+      <p class="legal"><a href="index.html">Back to homepage →</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  if (window.lucide) window.lucide.createIcons();
+</script>
+</body>
+</html>
