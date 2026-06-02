@@ -120,6 +120,11 @@
   ]
 }
 </script>
+
+<!-- Google Analytics 4 — add your tracking ID to activate -->
+<!-- To enable: replace G-XXXXXXXXXX with your GA4 Measurement ID from analytics.google.com -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
 </head>
 <body>
 <div class="scroll-progress" aria-hidden="true"></div>
@@ -367,7 +372,7 @@
             <input type="email" required placeholder="you@business.com" aria-label="Email for full report">
             <button class="btn btn-primary" type="submit">Email my report</button>
           </form>
-          <p class="note">We'll send a full breakdown plus the 5 automations every local business should run this week. No spam.</p>
+          <p class="note">We'll send a full breakdown plus the 5 automations every local business should run this week. No spam. By submitting you consent to follow-up by email. See our <a href="privacy.html" style="color:var(--steel);">Privacy Policy</a>.</p>
         </div>
       </div>
     </div>
@@ -694,7 +699,7 @@
     </div>
     <div class="footer-bottom">
       <p class="legal">© <span id="year">2026</span> smbautomation.ai · Los Angeles, CA · Available nationwide</p>
-      <p class="legal"><a href="design-system.html">Design system</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      <p class="legal"><a href="design-system.html">Design system</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
     </div>
   </div>
 </footer>
@@ -714,6 +719,7 @@
         <input id="m-biz" type="text" required placeholder="e.g. Torrance HVAC">
         <label for="m-phone">Best number</label>
         <input id="m-phone" type="tel" required placeholder="(310) 555-0123">
+        <p class="tcpa-notice">By submitting, you agree to receive calls and texts from smbautomation.ai about your inquiry. Msg &amp; data rates may apply. Reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</p>
         <button class="btn btn-primary btn-block btn-lg" type="submit" style="margin-top:var(--s-2);">Request my audit</button>
       </form>
     </div>

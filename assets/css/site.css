@@ -487,6 +487,17 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
 @media (max-width: 860px) { .guarantee { grid-template-columns: 1fr; } }
 
 /* ============================================================
+   TCPA / legal consent notice (below form submit buttons)
+   ============================================================ */
+.tcpa-notice {
+  font-size: var(--fs-caption);
+  color: var(--fg-dim);
+  line-height: 1.5;
+  margin-bottom: var(--s-3);
+}
+.tcpa-notice a { color: var(--steel); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ============================================================
    Sticky mobile CTA bar
    ============================================================ */
 .mobile-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 55; display: none; gap: var(--s-3); padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(13,15,18,0.92); backdrop-filter: blur(12px); border-top: 1px solid var(--line-strong); }
