@@ -406,7 +406,14 @@
       roiForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const wrap = roi.querySelector('.roi-capture');
-        const email = roiForm.querySelector('input[type="email"]').value;
+        const emailInput = roiForm.querySelector('input[type="email"]');
+        const email = emailInput ? emailInput.value : '';
+        // Submit to Netlify Forms (fire-and-forget)
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(roiForm)).toString()
+        }).catch(() => {});
         wrap.innerHTML = '<div style="display:flex;align-items:center;gap:12px;color:var(--green);font-weight:600;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Report on its way to ' + email + '</div><p class="note" style="margin-top:8px;">We\u2019ll send a full breakdown plus the 5 automations to run this week. No spam.</p>';
       });
     }
@@ -430,8 +437,33 @@
     if (form) {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
+        // Submit to Netlify Forms (fire-and-forget)
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        }).catch(() => {});
+        // Show success state
         const body = modal.querySelector('.modal-body');
-        body.innerHTML = '<div class="modal-success"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><h3>You\u2019re on the list.</h3><p>We\u2019ll reach out within one business day to lock in your 30-minute audit. Talk soon.</p></div>';
+        const successDiv = document.createElement('div');
+        successDiv.className = 'modal-success';
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.setAttribute('fill', 'none');
+        svg.setAttribute('stroke', 'currentColor');
+        svg.setAttribute('stroke-width', '2');
+        svg.setAttribute('stroke-linecap', 'round');
+        svg.setAttribute('stroke-linejoin', 'round');
+        svg.innerHTML = '<circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>';
+        const h3 = document.createElement('h3');
+        h3.textContent = 'You\u2019re on the list.';
+        const p = document.createElement('p');
+        p.textContent = 'We\u2019ll reach out within one business day to lock in your 30-minute audit. Talk soon.';
+        successDiv.appendChild(svg);
+        successDiv.appendChild(h3);
+        successDiv.appendChild(p);
+        body.textContent = '';
+        body.appendChild(successDiv);
       });
     }
   }

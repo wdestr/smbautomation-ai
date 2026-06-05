@@ -368,8 +368,9 @@
           <div class="rs"><div class="n" data-out="hours">0</div><div class="l">Hours saved / yr</div></div>
         </div>
         <div class="roi-capture">
-          <form>
-            <input type="email" required placeholder="you@business.com" aria-label="Email for full report">
+          <form name="roi-report" data-netlify="true">
+            <input type="hidden" name="form-name" value="roi-report">
+            <input type="email" name="email" required placeholder="you@business.com" aria-label="Email for full report">
             <button class="btn btn-primary" type="submit">Email my report</button>
           </form>
           <p class="note">We'll send a full breakdown plus the 5 automations every local business should run this week. No spam. By submitting you consent to follow-up by email. See our <a href="privacy.html" style="color:var(--steel);">Privacy Policy</a>.</p>
@@ -712,13 +713,14 @@
       <span class="eyebrow">Book your audit</span>
       <h3 id="modal-title">Let's find your leaks.</h3>
       <p>30 minutes. We'll map where you're losing calls and revenue, and tell you straight whether automation is worth it for you.</p>
-      <form>
+      <form name="booking-audit" data-netlify="true">
+        <input type="hidden" name="form-name" value="booking-audit">
         <label for="m-name">Name</label>
-        <input id="m-name" type="text" required placeholder="Your name">
+        <input id="m-name" name="name" type="text" required placeholder="Your name">
         <label for="m-biz">Business &amp; industry</label>
-        <input id="m-biz" type="text" required placeholder="e.g. Torrance HVAC">
+        <input id="m-biz" name="business" type="text" required placeholder="e.g. Torrance HVAC">
         <label for="m-phone">Best number</label>
-        <input id="m-phone" type="tel" required placeholder="(310) 555-0123">
+        <input id="m-phone" name="phone" type="tel" required placeholder="(310) 555-0123">
         <p class="tcpa-notice">By submitting, you agree to receive calls and texts from smbautomation.ai about your inquiry. Msg &amp; data rates may apply. Reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</p>
         <button class="btn btn-primary btn-block btn-lg" type="submit" style="margin-top:var(--s-2);">Request my audit</button>
       </form>
